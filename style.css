@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* ---- body styling ---- */
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ---- wrapper styling ---- */
+.wrapper {
+    max-width: 90rem;
+    background-image: url("/images/background.png");
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+/* ---- header styling ---- */
+.header {
+    height: 9.3125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 4rem;
+    width: 100%;
+}
+
+.header-logo {
+}
+
+.header-right {
+    margin-left: auto;
+    margin-right: 3rem;
+    width: 20rem;
+    height: 3rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: right;
+    align-items: center;
+}
+
+.header-read-more {
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5125rem;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-read-more:hover {
+    font-family: 'Inter', sans-serif;
+    color: #7e7e7ec7;
+    font-size: 1.25rem;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.header-book {
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5125rem;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-book:hover {
+    font-family: 'Inter', sans-serif;
+    color: #7e7e7ec7;
+    font-size: 1.25rem;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* ---- main styling ---- */
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: #474747;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.0256rem;
+}
+
+.main {
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- room cards ---- */
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.room-card {
+    display: flex;
+    flex-direction: column;
+    height: 19.625rem;
+    width: 25.5rem;
+    border: 1px solid #E3E3E3;
+    background-color: #F9F9F9;
+    border-radius: 20px 20px 0 0;
+}
+
+.room-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-header {
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+}
+
+.room-description-short {
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.book-now {
+font-family: 'Inter', sans-serif;
+font-size: 1rem;
+font-weight: 700;
+background-color: #fecb00b6;
+border: 0.25px solid black;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+border-radius: 4px;
+color: white;
+padding: 15px 32px;  
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer; 
+}
+
+/* ---- footer ---- */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.logo-footer {
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.address-text {
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-media-text {
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: 20px;
+    font-weight: 700;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+}
+
+.facebook-icon {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.twitter-icon {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.instagram-icon {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-text {
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: 20px;
+    font-weight: 700;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+    text-align: center;
+}
+
+.form__input {
+font-family: 'Inter', sans-serif;
+font-size: 14px;
+font-weight: 400;
+background-color: #fff;
+border: 0.7px solid #BBB8B8;
+border-radius: 4px;
+color: #474747C7;
+padding: 8px 16px;
+text-decoration: none;
+display: inline-block;
+font-size: 16px; 
+}
+
+.newsletter-button {
+font-family: 'Inter', sans-serif;
+font-size: 14px;
+font-weight: 400;
+background-color: #EDEDED;
+border: 0.7px solid #BBB8B8;
+border-radius: 4px;
+color: #474747C7;
+padding: 8px 16px;  
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px; 
+cursor: pointer;
+}
