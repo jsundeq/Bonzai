@@ -1,10 +1,17 @@
+/* ---- google fonts ---- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+/* ---- box-sizing: border-box tells the browser to account for any border and padding 
+in the values you specify for an element's width and height. 
+If you set an element's width to 100 pixels, 
+that 100 pixels will include any border or padding you added, 
+and the content box will shrink to absorb that extra width. 
+This typically makes it much easier to size elements. ---- */
 * {
     box-sizing: border-box;
 }
 
-/* ---- body styling ---- */
+/* ---- B O D Y  S T Y L I N G ---- */
 body {
     width: 100vw;
     height: 100vh;
@@ -26,15 +33,15 @@ a:hover {
     cursor: pointer;
 }
 
-/* ---- wrapper styling ---- */
+/* ---- M A I N  W R A P P E R  S T Y L I N G ---- */
 .wrapper {
     max-width: 90rem;
-    background-image: url("/images/background.png");
+    background: linear-gradient(to bottom, #ffffff9e, #ffffff9e), url("../images/background.jpg");
     background-repeat: no-repeat;
     margin: auto;
 }
 
-/* ---- header styling ---- */
+/* ---- M A I N  H E A D E R  S T Y L I N G ---- */
 .header {
     height: 9.3125rem;
     display: flex;
@@ -43,6 +50,14 @@ a:hover {
     align-items: center;
 }
 
+/* ---- original bonzai logo downsized and with 70% opacity ---- */
+.logo {
+    width: 14.1875rem;
+    height: 3.4375rem;
+    opacity: 0.7;
+}
+
+/* ---- N A V I G A T I O N  B A R ---- */
 .header-left {
     display: flex;
     flex-direction: row;
@@ -78,21 +93,6 @@ a:hover {
     align-items: center;
 }
 
-.header-read-more:hover {
-    font-family: 'Inter', sans-serif;
-    color: #7e7e7ec7;
-    font-size: 1.25rem;
-    font-weight: 700;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-
 .header-book {
     font-family: 'Inter', sans-serif;
     color: #474747C7;
@@ -108,22 +108,7 @@ a:hover {
     align-items: center;
 }
 
-.header-book:hover {
-    font-family: 'Inter', sans-serif;
-    color: #7e7e7ec7;
-    font-size: 1.25rem;
-    font-weight: 700;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-/* ---- main styling ---- */
-
+/* ---- M A I N  L A N D I N G  P A G E  S T Y L I N G ---- */
 h1 {
     font-family: 'Inter', sans-serif;
     color: #474747;
@@ -141,13 +126,24 @@ h1 {
 }
 
 /* ---- room cards ---- */
-
 .card-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+.room-image {
+    width: 25.5rem;
+    height: 10.855rem;
+    border-radius: 1.25rem 1.25rem 0px 0px;
+}
+
+.room-pic {
+    width: 25.5rem;
+    height: 10.855rem;
+    border-radius: 1.25rem 1.25rem 0px 0px;
 }
 
 .room-card {
@@ -185,29 +181,32 @@ h1 {
     margin-block-end: 0.5em;
 }
 
+/* ---- book now button styling ---- */
 .book-now {
-font-family: 'Inter', sans-serif;
-font-size: 1rem;
-font-weight: 700;
-letter-spacing: .1rem;
-background-color: #fecb00b6;
-border: 0.25px solid black;
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
-border-radius: 4px;
-color: white;
-padding: 15px 32px;  
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-cursor: pointer; 
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    letter-spacing: .15rem;
+    background-color: #fecb00b6;
+    border: 0.25px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    border-radius: 4px;
+    color: white;
+    width: 11.2912rem;
+    height: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer; 
 }
 
 .book-now:hover {
     background-color: #fff0b4f6;
     }
 
-/* ---- footer ---- */
+/* ---- F O O T E R  S T Y L I N G---- */
 .footer {
     width: 100%;
     display: flex;
@@ -217,15 +216,20 @@ cursor: pointer;
     gap: 3rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    padding-bottom: 10rem;
 }
 
+/* ---- original bonzai logo downsized to 2rem height with 1rem bottom margin and with 70% opacity ---- */
 .small-logo-bottom-margin {
     height: 2rem;
+    opacity: 0.7;
     margin-bottom: 1rem;
 }
 
+/* ---- original bonzai logo downsized to 2rem height and with 70% opacity ---- */
 .small-logo {
     height: 2rem;
+    opacity: 0.7;
 }
 
 
@@ -334,6 +338,7 @@ cursor: pointer;
 
 /* ---- A B O U T  P A G E ---- */
 
+/* ---- second navigation bar ---- */
 .main-booking {
     font-family: 'Inter', sans-serif;
     color: #474747C7;
@@ -350,14 +355,12 @@ cursor: pointer;
     margin-left: 12rem;
 }
 
-
-
 .main-booking-overview {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     }
 
 .main-booking-overview:hover {
@@ -368,87 +371,88 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-
-    .main-booking-rooms {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
     }
 
-    .main-booking-rooms:hover {
-        font-family: 'Inter', sans-serif;
-        color: #7e7e7ec7;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
+.main-booking-rooms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    }    
+
+.main-booking-rooms:hover {
+    font-family: 'Inter', sans-serif;
+    color: #7e7e7ec7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     }
 
-    .main-booking-gallery {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
+.main-booking-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     }
 
-    .main-booking-gallery:hover {
-        font-family: 'Inter', sans-serif;
-        color: #7e7e7ec7;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
+.main-booking-gallery:hover {
+    font-family: 'Inter', sans-serif;
+    color: #7e7e7ec7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     }
 
-    .main-booking-reviews {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
+.main-booking-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     }
 
-    .main-booking-reviews:hover {
-        font-family: 'Inter', sans-serif;
-        color: #7e7e7ec7;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
+.main-booking-reviews:hover {
+    font-family: 'Inter', sans-serif;
+    color: #7e7e7ec7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     }
 
-    .nav-line {
-        width: 100%;
-        height: 1px;
-        background-color: #928E8E;
-    }
-/* ---- about main wrapper ---- */
-
-    .about-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        max-width: 67rem;
-        margin: auto;
-        margin-top: 1.5rem;
+/* ---- line across page ---- */
+.nav-line {
+    width: 100%;
+    height: 1px;
+    background-color: #928E8E;
     }
 
-    .about-menu-logo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+/* ---- A B O U T  M A I N  W R A P P E R ---- */
+.about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 67rem;
+    margin: auto;
+    margin-top: 1.5rem;
     }
+
+.about-menu-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+
 /* ---- facilities ---- */
-
-    .facilities {
+.facilities {
     font-family: 'Inter', sans-serif;
     color: #474747C7;
     font-size: .875rem;
@@ -464,77 +468,77 @@ cursor: pointer;
     letter-spacing: .1rem;
     }
 
-    .facilities__wifi {
-        background-color: #F1F1F1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        min-width: 7rem;
-        min-height: 2.8rem;
-        border-radius: 3px;
+.facilities__wifi {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 7rem;
+    min-height: 2.8rem;
+    border-radius: 3px;
     }
 
-    .facilities__fitness {
-        background-color: #F1F1F1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        min-width: 7rem;
-        min-height: 2.8rem;
-        border-radius: 3px;
+.facilities__fitness {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 7rem;
+    min-height: 2.8rem;
+    border-radius: 3px;
     }
 
-    .facilities__pool {
-        background-color: #F1F1F1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        min-width: 7rem;
-        min-height: 2.8rem;
-        border-radius: 3px;
+.facilities__pool {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 7rem;
+    min-height: 2.8rem;
+    border-radius: 3px;
     }
 
-    .facilities__beach {
-        background-color: #F1F1F1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        min-width: 11rem;
-        min-height: 2.8rem;
-        border-radius: 3px;
+.facilities__beach {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 11rem;
+    min-height: 2.8rem;
+    border-radius: 3px;
     }
 
-    .facilities__reception {
-        background-color: #F1F1F1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        min-width: 14rem;
-        min-height: 2.8rem;
-        border-radius: 3px;
+.facilities__reception {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 14rem;
+    min-height: 2.8rem;
+    border-radius: 3px;
     }
 
-    .facilities__view-all {
-        text-decoration-line: underline;
-        text-decoration-thickness: .1875rem;
-        min-width: 7rem;
+.facilities__view-all {
+    text-decoration-line: underline;
+    text-decoration-thickness: .1875rem;
+    min-width: 7rem;
     }
 
-    .facilities-image {
-        margin-right: .5rem;
+.facilities-image {
+    margin-right: .5rem;
     }
 
-    .about-main-text {
+.about-main-text {
     font-family: 'Inter', sans-serif;
     color: #474747;
     font-size: 1.25rem;
@@ -545,7 +549,7 @@ cursor: pointer;
     margin-right: 4rem;
     }
 
-    .about-main-text-more {
+.about-main-text-more {
     font-family: 'Inter', sans-serif;
     color: #474747C7;
     font-size: .875rem;
@@ -559,227 +563,449 @@ cursor: pointer;
     margin-block-end: 0;
     }
 
-/* ---- slideshow ---- */
+/* ---- S L I D E S H O W ---- */
 
-    .slideshow-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-image: url(/images/slideshow.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: auto;
-        border: 1px solid;
-        max-width: 72.3125rem;
-        min-height: 15.1875rem;
-        margin-top: 3.5rem;
-        margin-bottom: 6rem;
+/* ---- wrapper ---- */
+.slideshow-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../images/slideshow.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border: 1px solid;
+    box-shadow: 5px 5px 11px #8888886b;
+    max-width: 72.3125rem;
+    max-height: 15.1875rem;
+    margin-top: 3.5rem;
+    margin-bottom: 6rem;
+    }
+/* ---- left pointer ---- */
+.left-pointer {
+    margin-left: -0.6rem;
     }
 
-    .left-pointer {
-        margin-left: -0.6rem;
+/* ---- right pointer ---- */
+.right-pointer {
+    margin-right: -0.6rem;
     }
 
-    .right-pointer {
-        margin-right: -0.6rem;
+/* ---- the vertical line image inside of booking form ---- */
+.vertical-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     }
 
-    .vertical-line {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-
+/* ---- calendar image ---- */
+.mini-calendar {
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0.65rem;
+    margin-inline-end: 0;
     }
 
-    .mini-calendar {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        margin-inline-start: 0.65rem;
-        margin-inline-end: 0;
+.check-in-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 12rem;
+    max-height: 1.5rem;
+    margin-left: 1rem;
     }
 
-    .check-in-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 12rem;
-        max-height: 1.5rem;
-        margin-left: 1rem;
+.slideshow-wrapper a {
+    flex: 1;
+}
+
+.slideshow-wrapper a:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-end;
+    flex: 3;
+}
+
+/* ---- B O O K I N G   B O X   W R A P P E R ---- */
+.booking-box-wrapper {
+    flex: 1;
+    max-width: 15rem;
+    min-height: 17rem;
+    border: 1px solid #E3E3E3;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
+    background-color: #D4D0D0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -0.7rem;
+    margin-bottom: -0.7rem;
     }
 
-    .booking-box-wrapper {
-        max-width: 15rem;
-        min-height: 17rem;
-        border: 1px solid #E3E3E3;
-        background-color: #D4D0D0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
+.booking-box {
+    min-width: 14rem;
+    min-height: 16rem;
+    border: #CAC6C6;
+    background-color: #FDFCFC;
+    margin: .5rem;
     }
 
-    .booking-box {
-        min-width: 14rem;
-        min-height: 16rem;
-        border: #CAC6C6;
-        background-color: #FDFCFC;
-        margin: .5rem;
+.nav-line-booking {
+    width: 100%;
+    height: 1px;
+    background-color: #928E8E;
     }
 
-    .nav-line-booking {
-        width: 100%;
-        height: 1px;
-        background-color: #928E8E;
+.booking-box-header {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.21rem;
+    letter-spacing: .1rem;
     }
 
-    .booking-box-header {
-        text-align: center;
-        font-family: 'Inter', sans-serif;
-        color: #474747C7;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.21rem;
-        letter-spacing: .1rem;
-        }
+.booking-box-check {
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: .625rem;
+    font-weight: 700;
+    line-height: 1.21rem;
+    }
 
-        .booking-box-check {
-        font-family: 'Inter', sans-serif;
-        color: #474747C7;
-        font-size: .625rem;
-        font-weight: 700;
-        line-height: 1.21rem;
-        }
+.booking-box-guests {
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: .5rem;
+    font-weight: 700;
+    line-height: .605rem;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.3em;
+    margin-inline-start: 1rem;
+    margin-inline-end: 0px;
+    }
 
-        .booking-box-guests {
-        font-family: 'Inter', sans-serif;
-        color: #474747C7;
-        font-size: .5rem;
-        font-weight: 700;
-        line-height: .605rem;
-        margin-block-start: 0.5rem;
-        margin-block-end: 0.3em;
-        margin-inline-start: 1rem;
-        margin-inline-end: 0px;
-        }
+.amount-of-guests {
+    font-family: 'Times';
+    color: #000;
+    font-size: 14px;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    line-height: 1rem;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 1rem;
+    margin-inline-end: 0px;
+    }
 
-        .amount-of-guests {
-        font-family: 'Times';
-        color: #000;
-        font-size: 14px;
-        letter-spacing: .1rem;
-        font-weight: 700;
-        line-height: 1rem;
-        margin-block-start: 0.5em;
-        margin-block-end: 0.5em;
-        margin-inline-start: 1rem;
-        margin-inline-end: 0px;
-        }
+.price-button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    }
 
-        .price-button {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
-
-        }
-
-        .check-price {
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            font-weight: 700;
-            background-color: #88B5D2;
-            border: 0.25px solid black;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
-            border-radius: 4px;
-            letter-spacing: .1rem;
-            color: white;
-            min-width: 11.25rem;
-            min-height: 2.5rem;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer; 
-            }
+.check-price {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #88B5D2;
+    border: 0.25px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    border-radius: 4px;
+    letter-spacing: .1rem;
+    color: white;
+    min-width: 11.25rem;
+    min-height: 2.5rem;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer; 
+    }
             
-        .check-price:hover {
-            background-color: #a6c2d4;
-            }
-
-/* ---- how to reach ---- */
-
-    .map-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        max-width: 63rem;
-        gap: 2rem;
-        margin: auto;
+.check-price:hover {
+    background-color: #a6c2d4;
     }
 
-    .how-to-reach {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        border: 1px solid;
-        padding:1rem 1.5rem 0rem 1.5rem;
-        min-width: 13rem;
-        min-height: 12.5rem;
-        background-color: #FAF8F8;
-        border: 1px solid #D9D9D9;
-        
+/* ---- H O W   T O   R E A C H ---- */
+
+.map-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 63rem;
+    gap: 2rem;
+    margin: auto;
     }
 
-    .station-distance {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+.how-to-reach {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid;
+    padding:1rem 1.5rem 0rem 1.5rem;
+    min-width: 13rem;
+    min-height: 12.5rem;
+    background-color: #FAF8F8;
+    border: 1px solid #D9D9D9;
     }
 
-    .reach-text__first-header {
-        font-family: 'Arial', sans-serif;
-        color: #474747C7;
-        font-size: 16px;
-        font-weight: 400;
-        margin-block-start: 0.5em;
-        margin-block-end: 0.5em;
+.station-distance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     }
 
-    .reach-text__header {
-        font-family: 'Arial', sans-serif;
-        color: #474747C7;
-        font-size: 13px;
-        font-weight: 400;
-        margin-block-start: 0.5em;
-        margin-block-end: 0.5em;
-
+.reach-text__first-header {
+    font-family: 'Arial', sans-serif;
+    color: #474747C7;
+    font-size: 16px;
+    font-weight: 400;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
     }
 
-    .reach-text_text {
-        font-family: 'Inter', sans-serif;
-        color: #474747C7;
-        font-size: 12px;
-        font-weight: 600;
-        margin-block-start: 0.5em;
-        margin-block-end: 0.5em;
+.reach-text__header {
+    font-family: 'Arial', sans-serif;
+    color: #474747C7;
+    font-size: 13px;
+    font-weight: 400;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
     }
 
-    .map {
-        margin: 0;
+.reach-text_text {
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: 12px;
+    font-weight: 600;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    }
+
+.map {
+    max-width: 45.1875rem;
+    margin: 0;
+    background-color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    }
+
+    /* ---- B O O K I N G  P A G E ---- */
+
+    /* ---- N A V B A R B O O K I N G   F O R M---- */
+.booking-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.5625rem;
+    font-family: 'Inter', sans-serif;
+    color: #474747C7;
+    font-size: .75rem;
+    font-weight: 700;
+    padding-bottom: 4rem;
+    }
+
+    /* ---- check in input ---- */
+.booking-form__input-check-in {
+    width: 15rem;
+    padding: 10px;
+    border: .25px solid #000;
+    border-radius: 4px;
+    }
+
+    /* ---- check out input ---- */
+.booking-form__input-check-out {
+    width: 15rem;
+    padding: 10px;
+    border: .25px solid #000;
+    border-radius: 4px;
+    }
+
+    /* ---- guests input ---- */
+.booking-form__input-guests {
+    width: 15rem;
+    padding: 10px;
+    border: .25px solid #000;
+    border-radius: 4px;
+    }
+    /* ---- search button ---- */
+.form__button {
+    width: 8.875rem;
+    height: 2.9375rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #474747;
+    border: 1px solid #CCCCCF;
+    background-color: #E3DDD5;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5rem;
+    margin-top: auto;
+    }
+
+/* ---- W R A P P E R   F O R   B O O K I N G   G R I D ---- */
+
+.wrapper__book-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 65.5rem;
+    margin: auto;
+    }
+    
+/* ---- right card ---- */
+
+.book__card-info {
+    width: 33.375rem;
+    height: 16.5625rem;
+    border: 1px solid #474747;
+    border-radius: 0 .9375rem .9375rem 0;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    }
+
+.book__card {
+    margin-top: 1.3125rem;
+    margin-left: 1.9375rem;
+    }
+
+/* ---- text styling right card ---- */
+
+.book__card-header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.781);
+    }
+    
+.book__card-m2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;    
+    font-size: 1.25rem;    
+    color: rgba(0, 0, 0, 0.781);  
+    letter-spacing: .1rem;      
+    }
+    
+.book__card--capital-small {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;    
+    font-size: .875rem;    
+    color: rgba(0, 0, 0, 0.781);
+    letter-spacing: .1rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    }
+    
+.book__card-price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;    
+    font-size: 2rem;    
+    color: rgba(0, 0, 0, 0.781);
+    letter-spacing: .1rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    }
+
+.book-now__wide {
+    width: 12.625rem;
+    height: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 24.2px;
+    letter-spacing: .15rem;
+    background-color: rgba(254, 204, 0, 0.7);
+    border: 0.25px solid black;
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer; 
+    }
+    
+.book-now__wide:hover {
+    background-color: #fff0b4f6;
+    }
+
+/* ---- left card ---- */
+
+.book__card-pic {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+
+.book__flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.9375rem;
+    margin-top: 1.5rem;
+    }
+
+.hobbiton__pic {
+    margin-block-start: 0em;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    }
+
+.hobbiton-img {
+    width: 29.375rem;
+    height: 16.5625rem;
+    border-radius: 15px 0 0 15px;
+    }
+
+.milford__pic {
+    margin-block-start: 0em;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    }
+
+.milford-img {
+    width: 29.375rem;
+    height: 16.5625rem;
+    border-radius: 15px 0 0 15px;
+    }
+
+.mount-cook__pic {
+    margin-block-start: 0em;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    }
+
+.mount-cook-img {
+    width: 29.375rem;
+    height: 16.5625rem;
+    border-radius: 15px 0 0 15px;
     }
