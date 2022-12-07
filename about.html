@@ -17,12 +17,12 @@
         <section class="header">
             <section class="header-left">
                     <article class="header-logo">
-                        <a href="index.html" target="_self"><img src="/images/logo.png" alt="logo"/></a>
+                        <a href="index.html" target="_self"><img src="../images/logo.png" alt="logo" class="logo" />
                     </article>
             </section>
             <section class="header-right">
                     <article class="header-read-more">Read More</article>
-                    <article class="header-book">Book</article>
+                    <article class="header-book"><a href="book.html" target="_self">Book</a></article>
             </section>
         </section>
     </header>
@@ -41,16 +41,16 @@
     </section>
 <main class="about-main">
     <aside class="about-menu-logo">
-        <img src="/images/logo.png" class="small-logo" alt="logo"/>
-        <img src="/images/five-stars.png"/></aside>
+        <img src="./images/logo.png" class="small-logo" alt="logo"/>
+        <img src="./images/five-stars.png"/></aside>
 <br>
     <section class="facilities">
-        <article class="facilities__wifi"><img src="/images/wifi.png" class="facilities-image"/>WiFi</article>
-        <article class="facilities__fitness"><img src="/images/gym.png" class="facilities-image"/>Fitness</article>
-        <article class="facilities__pool"><img src="/images/pool.png" class="facilities-image"/>Pool</article>
-        <article class="facilities__beach"><img src="/images/beach.png" class="facilities-image"/>Beach Access</article>
-        <article class="facilities__reception"><img src="/images/reception.png" class="facilities-image"/>24Hour-Reception</article>
-        <article class="facilities__view-all">VIEW ALL+</article>
+        <article class="facilities__wifi"><img src="./images/wifi.png" class="facilities-image"/>WiFi</article>
+        <article class="facilities__fitness"><img src="./images/gym.png" class="facilities-image"/>Fitness</article>
+        <article class="facilities__pool"><img src="./images/pool.png" class="facilities-image"/>Pool</article>
+        <article class="facilities__beach"><img src="./images/beach.png" class="facilities-image"/>Beach Access</article>
+        <article class="facilities__reception"><img src="./images/reception.png" class="facilities-image"/>24Hour-Reception</article>
+        <a href=""><article class="facilities__view-all">VIEW ALL+</article></a>
     </section>
 <br>
 <!-- ---- main text ---- -->
@@ -60,14 +60,35 @@
 </p>
 <p class="about-main-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 </p>
-<p class="about-main-text-more">MORE+</p>
+<a href=""><p class="about-main-text-more">MORE+</p></a>
 </main>
 <br>
     <!-- ---- slideshow ---- -->
     <section class="slideshow-wrapper">
-<figure class="left-pointer"><img src="/images/pointer_left.png" class="left-pointer" alt="left pointer"/></figure>
-<article></article>
-<figure class="right-pointer"><img src="/images/pointer_right.png" class="right-pointer" alt="right pointer"/></figure>
+        <a href=""><figure class="left-pointer"><img src="./images/pointer_left.png" class="left-pointer" alt="left pointer"/></figure></a>
+
+    <div class="booking-box-wrapper">
+        <section class="booking-box">
+            <p class="booking-box-header">Online Booking</p>
+            <aside class="nav-line-booking"></aside>
+            <figure class="vertical-line"><img src="./images/vertical-line.png" alt="vertical line"></figure>
+            <article class="check-in-wrapper">
+                <p class="booking-box-check">CHECK-IN</p>
+                <figure class="mini-calendar"><img src="./images/mini-calendar.png" alt="mini calendar"></figure>
+                <p class="booking-box-check">CHECK-OUT</p>
+            </article>
+            <figure class="vertical-line"><img src="./images/vertical-line.png" alt="vertical line"></figure>
+            <aside class="nav-line"></aside>
+            <p class="booking-box-guests">GUESTS</p>
+            <p class="amount-of-guests">2 Guests 1 Room</p>
+            <aside class="nav-line"></aside>
+            <section class="price-button">
+            <button class="check-price">Check Price</button>
+            </section>
+        </section>
+        </div>
+
+        <a href=""><figure class="right-pointer"><img src="./images/pointer_right.png" class="right-pointer" alt="right pointer"/></figure></a>
     </section>
     <!-- ---- how to reach ---- -->
     <div class="map-wrapper">
@@ -83,7 +104,7 @@
             <p class="reach-text_text">3 km</p></article>
             <aside class="nav-line"></aside>
         </section>
-        <figure class="map"><img src="/images/map.png" alt="map"/></figure>
+        <figure class="map"><img src="./images/map.png" alt="map"/></figure>
     </div>
 
 
@@ -91,7 +112,7 @@
 
 <footer class="footer">
     <article class="address">
-        <img src="/images/logo.png" class="small-logo-bottom-margin" alt="logo"/>
+        <img src="./images/logo.png" class="small-logo-bottom-margin" alt="logo"/>
         <p class="address-text">11 Maywoos Grove</p>
         <p class="address-text">Churton Park / Wellington</p>
         <p class="address-text">Phone: (+64) 027 4370-347</p>
@@ -101,14 +122,14 @@
         <nav class="social-media-icons">
         
         <figure class="facebook-icon">
-            <a href="https://www.facebook.com"><img src="/images/facebook-icon.png" alt="facebook"/></a>
+            <a href="https://www.facebook.com"><img src="./images/facebook-icon.png" alt="facebook"/></a>
         </figure>
 
         <figure class="twitter-icon">
-            <a href="https://www.twitter.com"><img src="/images/twitter-icon.png" alt="twitter"/></a>
+            <a href="https://www.twitter.com"><img src="./images/twitter-icon.png" alt="twitter"/></a>
         </figure>
 
-        <figure class="instagram-icon"><a href="https://www.instagram.com"><img src="/images/instagram-icon.png" alt="instagram"/></a>
+        <figure class="instagram-icon"><a href="https://www.instagram.com"><img src="./images/instagram-icon.png" alt="instagram"/></a>
         </figure>
         </nav>
 
@@ -123,26 +144,5 @@
     </article>
 </footer>
 </div>
-<div class="booking-box-wrapper">
-<section class="booking-box">
-    <p class="booking-box-header">Online Booking</p>
-    <aside class="nav-line-booking"></aside>
-    <figure class="vertical-line"><img src="/images/vertical-line.png" alt="vertical line"></figure>
-    <article class="check-in-wrapper">
-        <p class="booking-box-check">CHECK-IN</p>
-        <figure class="mini-calendar"><img src="/images/mini-calendar.png" alt="mini calendar"></figure>
-        <p class="booking-box-check">CHECK-OUT</p>
-    </article>
-    <figure class="vertical-line"><img src="/images/vertical-line.png" alt="vertical line"></figure>
-    <aside class="nav-line"></aside>
-    <p class="booking-box-guests">GUESTS</p>
-    <p class="amount-of-guests">2 Guests 1 Room</p>
-    <aside class="nav-line"></aside>
-    <section class="price-button">
-    <button class="check-price">Check Price</button>
-    </section>
-</section>
-</div>
-
 </body>
 </html>
