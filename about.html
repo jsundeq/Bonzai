@@ -8,41 +8,40 @@
     <title>B O N Z A I</title>
 </head>
 <body>
-
-    <!-- ---- wrapper ---- -->
+<!-- ---- wrapper ---- -->
 <div class="wrapper">
-
-    <!-- ---- header ---- -->
+<!-- ---- header ---- -->
     <header>
         <section class="header">
-            <section class="header-left">
-                    <article class="header-logo">
+            <article class="header-left">
+                    <figure class="header-logo">
                         <a href="index.html" target="_self"><img src="./images/logo.png" alt="logo" class="logo" />
-                    </article>
-            </section>
-            <section class="header-right">
+                        </figure>
+                </article>
+            <nav class="header-right">
                     <article class="header-read-more">Read More</article>
                     <article class="header-book"><a href="book.html" target="_self">Book</a></article>
-            </section>
+            </nav>
         </section>
     </header>
+<!-- ---- second navigation bar ---- -->
+    <nav>
+        <ul class="main-booking">
+            <li class="main-booking-overview">Overview</li>
+            <li class="main-booking-rooms">Rooms</li>
+            <li class="main-booking-gallery">Gallery</li>
+            <li class="main-booking-reviews">Reviews</li>
+        </ul>
+    </nav>
 
-    <!-- ---- main ---- -->
-    <main>
-        <nav class="main-booking">
-            <article class="main-booking-overview">Overview</article>
-            <article class="main-booking-rooms">Rooms</article>
-            <article class="main-booking-gallery">Gallery</article>
-            <article class="main-booking-reviews">Reviews</article>
-        </nav>
-    </main>
-
-    <section class="nav-line">
-    </section>
-<main class="about-main">
-    <aside class="about-menu-logo">
-        <img src="./images/logo.png" class="small-logo" alt="logo"/>
-        <img src="./images/five-stars.png"/></aside>
+    <figure class="nav-line">
+    </figure>
+<!-- ---- main ---- -->
+    <main class="about-main">
+        <figure class="about-menu-logo">
+            <img src="./images/logo.png" class="small-logo" alt="logo"/>
+            <img src="./images/five-stars.png" alt ="five-stars"/>
+        </figure>
 <br>
     <section class="facilities">
         <article class="facilities__wifi"><img src="./images/wifi.png" class="facilities-image"/>WiFi</article>
@@ -54,7 +53,7 @@
     </section>
 <br>
 <!-- ---- main text ---- -->
-    <p class="about-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<p class="about-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </p>
 <p class="about-main-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 </p>
@@ -63,8 +62,8 @@
 <a href=""><p class="about-main-text-more">MORE+</p></a>
 </main>
 <br>
-    <!-- ---- slideshow ---- -->
-    <section class="slideshow-wrapper">
+<!-- ---- slideshow ---- -->
+    <nav class="slideshow-wrapper">
         <a href=""><figure class="left-pointer"><img src="./images/pointer_left.png" class="left-pointer" alt="left pointer"/></figure></a>
 
     <div class="booking-box-wrapper">
@@ -87,29 +86,28 @@
             </section>
         </section>
         </div>
-
         <a href=""><figure class="right-pointer"><img src="./images/pointer_right.png" class="right-pointer" alt="right pointer"/></figure></a>
+    </nav>
+<!-- ---- how to reach ---- -->
+<div class="map-wrapper">
+    <section class="how-to-reach">
+        <p class="reach-text__first-header">How to reach hotel</p>
+        <figure class="nav-line"></figure>
+        <p class="reach-text__header">AIRPORTS</p>
+        <article class="station-distance"><p class="reach-text_text">Wellington Airport</p>
+        <p class="reach-text_text">23 km</p></article>
+        <figure class="nav-line"></figure>
+        <p class="reach-text__header">TRAIN STATION</p>
+        <article class="station-distance"><p class="reach-text_text">Johnsonville Station</p>
+        <p class="reach-text_text">3 km</p></article>
+        <figure class="nav-line"></figure>
     </section>
-    <!-- ---- how to reach ---- -->
-    <div class="map-wrapper">
-        <section class="how-to-reach">
-            <p class="reach-text__first-header">How to reach hotel</p>
-            <aside class="nav-line"></aside>
-            <p class="reach-text__header">AIRPORTS</p>
-            <article class="station-distance"><p class="reach-text_text">Wellington Airport</p>
-            <p class="reach-text_text">23 km</p></article>
-            <aside class="nav-line"></aside>
-            <p class="reach-text__header">TRAIN STATION</p>
-            <article class="station-distance"><p class="reach-text_text">Johnsonville Station</p>
-            <p class="reach-text_text">3 km</p></article>
-            <aside class="nav-line"></aside>
-        </section>
-        <figure class="map"><img src="./images/map.png" alt="map" class="map-pic"/></figure>
-    </div>
 
-
-    <!-- ---- footer ---- -->
-
+    <figure class="map">
+            <img src="./images/map.png" alt="map" class="map-pic"/>
+    </figure>
+</div>
+<!-- ---- footer ---- -->
 <footer class="footer">
     <article class="address">
         <img src="./images/logo.png" class="small-logo-bottom-margin" alt="logo"/>
@@ -120,19 +118,15 @@
     <article class="social-media">
         <p class="social-media-text">Follow us</p>
         <nav class="social-media-icons">
-        
         <figure class="facebook-icon">
             <a href="https://www.facebook.com"><img src="./images/facebook-icon.png" alt="facebook"/></a>
         </figure>
-
         <figure class="twitter-icon">
             <a href="https://www.twitter.com"><img src="./images/twitter-icon.png" alt="twitter"/></a>
         </figure>
-
         <figure class="instagram-icon"><a href="https://www.instagram.com"><img src="./images/instagram-icon.png" alt="instagram"/></a>
         </figure>
         </nav>
-
     </article>
     <article class="newsletter">
         <form class="form">
