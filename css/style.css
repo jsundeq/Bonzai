@@ -1048,7 +1048,7 @@ cursor: pointer;
     height: 16.5625rem;
     border-radius: 15px 0 0 15px;
     }
-
+/* --- M E D I A  Q U E R I E S --- */
     @media screen and (max-width: 480px) {
         body {
         margin: 0;
