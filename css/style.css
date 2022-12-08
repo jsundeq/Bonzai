@@ -1049,8 +1049,9 @@ cursor: pointer;
     border-radius: 15px 0 0 15px;
     }
 /* --- M E D I A  Q U E R I E S --- */
-    @media screen and (max-width: 1090px) {
+    @media screen and (max-width: 480px) {
         body {
+        background: linear-gradient(to bottom, #ffffff9e, #ffffff9e), url("../images/background.jpg");
         margin: 0;
         width:  0;
         height: 0;
@@ -1067,7 +1068,8 @@ cursor: pointer;
 
         .logo {
             width: auto;
-            height: 4.6rem;
+            height: 4.3rem;
+            margin-bottom: .5rem;
         }
 
         .header-left {
